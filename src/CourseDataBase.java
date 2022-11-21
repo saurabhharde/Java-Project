@@ -11,6 +11,9 @@ public class CourseDataBase {
 	
 	}	
 	public void DisplyCourses() {
+		System.out.println();
+		System.out.println("*********************----------Available Courses----------**********************");
+		System.out.println();
 		System.out.println("--------------------------------------------------------------------------------");
 		System.out.printf("%-18s%-30s%-20s%-2s", "Course Id", "Name", "Difficulty Level", "Duration","\n");
 		System.out.println();
@@ -25,5 +28,3 @@ public class CourseDataBase {
 		System.out.println("--------------------------------------------------------------------------------");
 	}
 }
-
-
