@@ -12,9 +12,9 @@ public class ClockinTime {
 				EnrollnewCourses.enrollCourse.get(i).getStudentid().equals(currentId)){
 				Scanner spenttime= new Scanner(System.in);
 				System.out.print("Enter time spent in Course "+C_Id+" : ");
-			try{double timeSpent=spenttime.nextInt();
-				if (timeSpent<=CourseDataBase.courses.get(C_Id).getDuration()) {
-					double actualtimespent=timeSpent+EnrollnewCourses.enrollCourse.get(i).getSpenttime();
+			try{		double timeSpent=spenttime.nextInt();
+			   		 double actualtimespent=timeSpent+EnrollnewCourses.enrollCourse.get(i).getSpenttime();
+				if (actualtimespent<=CourseDataBase.courses.get(C_Id).getDuration()) {					
 					double completion=(actualtimespent*100)/CourseDataBase.courses.get(C_Id).getDuration();
 					EnrollnewCourses.enrollCourse.set(i, new EnrollCourse(currentId,StudentDataBase.studentData.get(currentId).getStudentName(),
 							C_Id,CourseDataBase.courses.get(C_Id).getCoursename(),
@@ -23,7 +23,7 @@ public class ClockinTime {
 					System.out.println("sucessfully add spent time in course");
 			    	     }
 				else {
-					System.out.println("Enter valid time spent");
+					System.out.println("Timespent more than Course duration time \nPlease enter valid time spent");
 					break;
 				     }
 				
