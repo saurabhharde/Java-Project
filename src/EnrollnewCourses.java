@@ -4,9 +4,11 @@ import java.util.Scanner;
 
 
 public class EnrollnewCourses {
-//	public static Map<String, List<EnrollCourse>> enrollCourse = new HashMap<>();
 	public static List<EnrollCourse> enrollCourse = new ArrayList<>();
 	public void enrollCourse(String currentid) {
+		System.out.println();
+		System.out.println("-----------------------Enroll New Course---------------------------");
+		System.out.println();
 		Scanner scanId= new Scanner(System.in);
 		System.out.print("Enter course Id : ");
 		String courseId= scanId.nextLine();
@@ -25,6 +27,9 @@ public class EnrollnewCourses {
 	}
 	
 	public void enrolledCourses(String currentId) {
+		System.out.println();
+		System.out.println("-----------------------Enrolled Courses---------------------------");
+		System.out.println();
 		System.out.println("Student ID : "+currentId);
 		System.out.println("Student Name : "+StudentDataBase.studentData.get(currentId).getStudentName());
 		System.out.println("------------------------------------------------------------------");
@@ -39,14 +44,7 @@ public class EnrollnewCourses {
 				System.out.println();
 			}
 		}
-		System.out.println("------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------");			
+	}
 
-	}
-	
-	public static void main(String[] args) {
-		StudentDataBase studentDataBase = new StudentDataBase();
-		studentDataBase.Authentication("S101", "abcd");
-		CourseDataBase courseDataBase=new CourseDataBase();
-		EnrollnewCourses enrollnewCourses=new EnrollnewCourses();
-	}
 }
