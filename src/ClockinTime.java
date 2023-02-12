@@ -62,9 +62,6 @@ public class ClockinTime {
 		}
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------------------");
-		System.out.println();
-		
-	}
-
-	
+		System.out.println();		
+	}	
 }
