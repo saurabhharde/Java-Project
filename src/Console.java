@@ -81,7 +81,7 @@ public class Console {
 			currentuserid=userID;
 		}
 		else {
-			System.out.println("\n You have entered woeng username/password");
+			System.out.println("\n You have entered wrong username/password");
 		}
 		
 	}
@@ -95,7 +95,7 @@ public class Console {
 		System.out.println("d - Clock-in time");
 		System.out.println("e - View Summery");
 		System.out.println("f - Logout");
-		System.out.println("Enter above option : ");
+		System.out.print("Enter above option : ");
 		return scanner.nextLine();
 	}
 	
